@@ -44,6 +44,10 @@ class GlobalID
   end
 end
 
+module GlobalID::FixtureSet
+  def signed_global_id(fixture_set_name, label, column_type: T.unsafe(nil), **options); end
+end
+
 module GlobalID::Identification
   def to_gid(options = T.unsafe(nil)); end
   def to_gid_param(options = T.unsafe(nil)); end
