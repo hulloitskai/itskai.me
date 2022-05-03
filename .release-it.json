@@ -1,0 +1,12 @@
+{
+  "git": {
+    "changelog": "yarn -s changelog --stdout --commit-limit false --unreleased",
+    "commitMessage": "chore: release v${version}"
+  },
+  "npm": {
+    "publish": false
+  },
+  "hooks": {
+    "after:bump": "yarn -s changelog -p"
+  }
+}

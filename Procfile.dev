@@ -1,0 +1,3 @@
+web: bundle exec rails server
+js: bundle exec rails javascript:watch
+css: bundle exec rails css:watch

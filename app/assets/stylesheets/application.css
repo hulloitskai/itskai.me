@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply focus-visible:outline-none focus-visible:ring;
+  }
+}
+
+/* Override profiler badge styles */
+.profiler-button {
+  border-top: 1px solid #888;
+  border-bottom: none !important;
+}

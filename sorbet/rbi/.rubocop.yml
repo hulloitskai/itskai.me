@@ -1,0 +1,22 @@
+inherit_from: ../../.rubocop.yml
+
+inherit_gem:
+  rubocop-sorbet: config/rbi.yml
+
+Layout/LineLength:
+  Enabled: false
+
+Style/OpenStructUse:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/InclusiveLanguage:
+  Enabled: false
+
+Sorbet/SingleLineRbiClassModuleDefinitions:
+  Enabled: false

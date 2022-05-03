@@ -1,0 +1,4 @@
+{
+  "*.{rb,rbi,js,jsx,ts,tsx,css,md,html,json,yaml,yml}": "yarn prettier --check",
+  "*.rb": "bundle exec rubocop --force-exclusion"
+}

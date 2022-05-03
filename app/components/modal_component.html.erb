@@ -1,0 +1,29 @@
+<div data-xt-overlay="{ duration: 500 }">
+  <span data-xt-overlay-element>
+    <%= trigger %>
+  </span>
+  <div aria-label="Modal" class="xt-overlay group" data-xt-overlay-target>
+    <div class="xt-backdrop z-below bg-gray-800 opacity-0 transition-opacity ease-out-quint group-in:duration-300 group-out:duration-100 group-in:opacity-25">
+    </div>
+    <div class="xt-overlay-container max-w-lg">
+      <div class="xt-overlay-inner my-8 transition opacity-0 scale-95 group-in:opacity-100 group-in:scale-100 group-out:scale-105">
+        <div class="xt-card rounded-lg shadow-xl text-gray-900 xt-links-default bg-white">
+          <button
+            class="xt-button xt-dismiss absolute top-1 right-1 rounded-full text-gray-400 transition-colors hover:text-gray-500"
+            aria-label="Close"
+          >
+            <%= heroicon "x-circle", variant: "solid" %>
+          </button>
+          <div class="px-4 py-6 xt-list xt-list-2">
+            <header>
+              <%= header %>
+            </header>
+            <main class="text-sm">
+              <%= body %>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

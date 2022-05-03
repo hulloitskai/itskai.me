@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>It&apos;s Kai</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "inter-font" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= javascript_include_tag "xtendui", "data-turbo-track": "reload", defer: true %>
+  </head>
+  <body class="xt-body xt-links-default">
+    <header class="px-3 py-2 border-b border-gray-200">
+      <a class="no-underline" href="/">
+        <h6 class="xt-h6 text-black tracking-widest">KAI</h6>
+      </a>
+    </header>
+    <main class="container mx-auto max-w-xl p-3">
+      <%= yield %>
+    </main>
+  </body>
+</html>
