@@ -14,13 +14,22 @@
           >
             <%= heroicon "x-circle", variant: "solid" %>
           </button>
-          <div class="px-4 py-6 xt-list xt-list-2">
-            <header>
-              <%= header %>
-            </header>
-            <main class="text-sm">
-              <%= body %>
-            </main>
+          <div class="p-4 pt-6 xt-list xt-list-2 flex-col">
+            <% if header? %>
+              <header>
+                <%= header %>
+              </header>
+            <% end %>
+            <% if body? %>
+              <main class="text-sm">
+                <%= body %>
+              </main>
+            <% end %>
+            <% if footer? %>
+              <footer>
+                <%= footer %>
+              </footer>
+            <% end %>
           </div>
         </div>
       </div>
