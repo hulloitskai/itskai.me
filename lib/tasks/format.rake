@@ -4,12 +4,12 @@
 namespace :format do
   desc "Check code formatting"
   task :check do
-    system("yarn prettier --check .")
+    system("yarn install && yarn prettier --check .")
   end
 
   desc "Fix code formatting"
   task :fix do
-    system("yarn prettier --write .")
+    system("yarn install && yarn prettier --write .")
   end
 end
 
