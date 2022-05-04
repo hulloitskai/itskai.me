@@ -148,7 +148,7 @@ group :development do
   gem "memory_profiler"
   gem "stackprof"
 
-  # Display better errors in development
+  # Display a better error page during development
   gem "better_errors"
   gem "binding_of_caller"
 
